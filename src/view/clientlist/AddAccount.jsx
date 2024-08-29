@@ -18,7 +18,7 @@ const AddAccount = () => {
             </div>
 
             {/* clint name */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <label for="inputPassword" class="col-form-label">
                 Client Name
               </label>
@@ -28,7 +28,7 @@ const AddAccount = () => {
             </div>
 
             {/* password */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <label for="inputPassword" class="col-form-label">
                 Password
               </label>
@@ -42,12 +42,12 @@ const AddAccount = () => {
             </div>
 
             {/* account type */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <label for="inputPassword" class="col-form-label">
                 Account Type
               </label>
               <div>
-                <select class="form-select" aria-label="Default select example">
+              <select class="form-control" id="exampleFormControlSelect1">
                   <option selected>select Account type</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
@@ -56,7 +56,7 @@ const AddAccount = () => {
               </div>
             </div>
             {/* Credit Reference */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <label for="inputPassword" class="col-form-label">
                 Credit Reference
               </label>
@@ -65,7 +65,7 @@ const AddAccount = () => {
               </div>
             </div>
             {/* Confirm Password */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <label for="inputPassword" class="col-form-label">
                 Confirm Password
               </label>
@@ -78,7 +78,7 @@ const AddAccount = () => {
               </div>
             </div>
             {/* full Name */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <label for="inputPassword" class="col-form-label">
                 Full Name
               </label>
@@ -87,10 +87,10 @@ const AddAccount = () => {
               </div>
             </div>
             {/* blank div*/}
-            <div class="form-group col-md-6"></div>
+            <div class="  col-md-6"></div>
 
             {/* City */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <label for="inputPassword" class="col-form-label">
                 City
               </label>
@@ -100,7 +100,7 @@ const AddAccount = () => {
             </div>
 
             {/* Phone */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <label for="inputPassword" class="col-form-label">
                 Phone
               </label>
@@ -109,24 +109,24 @@ const AddAccount = () => {
               </div>
 
               {/* blank div*/}
-              <div class="form-group col-md-6"></div>
+              <div class="  col-md-6"></div>
             </div>
             {/* blank div*/}
-            <div class="form-group col-md-6"></div>
+            <div class="  col-md-6"></div>
 
             {/* ************************************************ */}
 
-            <div className="commisiom_setting">
+            <div className="commisiom_setting mt-3">
               <div className="client_black_div">
                 <h4>Commission Setting</h4>
               </div>
             </div>
 
             {/* blank div*/}
-            <div class="form-group col-md-3"></div>
+            <div class="  col-md-3"></div>
 
             {/* Cricket */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3 mb-3">
               <label for="inputPassword" class="col-form-label">
                 Cricket
               </label>
@@ -134,7 +134,7 @@ const AddAccount = () => {
             </div>
 
             {/* Soccer */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <label for="inputPassword" class="col-form-label">
                 Soccer
               </label>
@@ -142,108 +142,108 @@ const AddAccount = () => {
             </div>
 
             {/* tennis */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <label for="inputPassword" class="col-form-label">
                 Tennis
               </label>
             </div>
 
             {/* Up Line */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <label for="inputPassword" class="col-form-label">
                 Up line
               </label>
             </div>
 
             {/* ------ */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <div class="">
-                <input type="text" class="form-control" id="inputPassword" />
+                <input type="text" class="form-control" id="inputPassword" disabled value={0} />
               </div>
             </div>
 
             {/* ------ */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <div class="">
-                <input type="text" class="form-control" id="inputPassword" />
+                <input type="text" class="form-control" id="inputPassword"disabled value={0} />
               </div>
             </div>
 
             {/* ------- */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <div class="">
-                <input type="text" class="form-control" id="inputPassword" />
+                <input type="text" class="form-control" id="inputPassword"disabled value={0} />
               </div>
             </div>
 
             {/* Down Line */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <label for="inputPassword" class="col-form-label">
                 Down line
               </label>
             </div>
 
-            {/* Phone */}
-            <div class="form-group col-md-3">
+            {/* -----*/}
+            <div class="  col-md-3">
               <div class="">
                 <input type="text" class="form-control" id="inputPassword" />
               </div>
             </div>
 
-            {/* Phone */}
-            <div class="form-group col-md-3">
+            {/* ----- */}
+            <div class="  col-md-3">
               <div class="">
                 <input type="text" class="form-control" id="inputPassword" />
               </div>
             </div>
 
-            {/* Phone */}
-            <div class="form-group col-md-3">
+            {/* ----- */}
+            <div class="  col-md-3">
               <div class="">
                 <input type="text" class="form-control" id="inputPassword" />
               </div>
             </div>
 
             {/* Our */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <label for="inputPassword" class="col-form-label">
                 Our
               </label>
             </div>
 
-            {/* Phone */}
-            <div class="form-group col-md-3">
+            {/* ----- */}
+            <div class="  col-md-3">
               <div class="">
-                <input type="text" class="form-control" id="inputPassword" />
+                <input type="text" class="form-control" id="inputPassword" disabled />
               </div>
             </div>
 
-            {/* Phone */}
-            <div class="form-group col-md-3">
+            {/* ------ */}
+            <div class="  col-md-3">
               <div class="">
-                <input type="text" class="form-control" id="inputPassword" />
+                <input type="text" class="form-control" id="inputPassword" disabled />
               </div>
             </div>
 
-            {/* Phone */}
-            <div class="form-group col-md-3">
+            {/* ----- */}
+            <div class="  col-md-3">
               <div class="">
-                <input type="text" class="form-control" id="inputPassword" />
+                <input type="text" class="form-control" id="inputPassword" disabled />
               </div>
             </div>
 
             {/* ***************************************? */}
-            <div className="commisiom_setting">
+            <div className="commisiom_setting mt-2">
               <div className="client_black_div">
-                <h4>Commission Setting</h4>
+                <h4>Bit Limit Setting</h4>
               </div>
             </div>
 
             {/* blank div*/}
-            <div class="form-group col-md-3"></div>
+            <div class="  col-md-3"></div>
 
             {/* Cricket */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3 mb-3">
               <label for="inputPassword" class="col-form-label">
                 Cricket
               </label>
@@ -251,7 +251,7 @@ const AddAccount = () => {
             </div>
 
             {/* Soccer */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <label for="inputPassword" class="col-form-label">
                 Soccer
               </label>
@@ -259,101 +259,101 @@ const AddAccount = () => {
             </div>
 
             {/* tennis */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <label for="inputPassword" class="col-form-label">
                 Tennis
               </label>
             </div>
 
-            {/* Up Line */}
-            <div class="form-group col-md-3">
+            {/* Minimum */}
+            <div class="  col-md-3">
               <label for="inputPassword" class="col-form-label">
-                Up line
+                Minimum
               </label>
             </div>
 
             {/* ------ */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <div class="">
-                <input type="text" class="form-control" id="inputPassword" />
+                <input type="text" class="form-control" id="inputPassword" value={100} />
               </div>
             </div>
 
             {/* ------ */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <div class="">
-                <input type="text" class="form-control" id="inputPassword" />
+                <input type="text" class="form-control" id="inputPassword" value={100} />
               </div>
             </div>
 
             {/* ------- */}
-            <div class="form-group col-md-3">
+            <div class="  col-md-3">
               <div class="">
-                <input type="text" class="form-control" id="inputPassword" />
+                <input type="text" class="form-control" id="inputPassword" value={100} />
               </div>
             </div>
 
-            {/* Down Line */}
-            <div class="form-group col-md-3">
+            {/* Maximum */}
+            <div class="  col-md-3">
               <label for="inputPassword" class="col-form-label">
-                Down line
+                Maximum
               </label>
             </div>
 
-            {/* Phone */}
-            <div class="form-group col-md-3">
+            {/* ------ */}
+            <div class="  col-md-3">
               <div class="">
-                <input type="text" class="form-control" id="inputPassword" />
+                <input type="text" class="form-control" id="inputPassword" value={100000} />
               </div>
             </div>
 
-            {/* Phone */}
-            <div class="form-group col-md-3">
+            {/* ------ */}
+            <div class="  col-md-3">
               <div class="">
-                <input type="text" class="form-control" id="inputPassword" />
+                <input type="text" class="form-control" id="inputPassword" value={5000} />
               </div>
             </div>
 
-            {/* Phone */}
-            <div class="form-group col-md-3">
+            {/* ----- */}
+            <div class="  col-md-3">
               <div class="">
-                <input type="text" class="form-control" id="inputPassword" />
+                <input type="text" class="form-control" id="inputPassword" value={5000}/>
               </div>
             </div>
 
-            {/* Our */}
-            <div class="form-group col-md-3">
+            {/* Delay */}
+            <div class="  col-md-3">
               <label for="inputPassword" class="col-form-label">
-                Our
+                Delay
               </label>
             </div>
 
-            {/* Phone */}
-            <div class="form-group col-md-3">
+            {/* ------ */}
+            <div class="  col-md-3">
               <div class="">
-                <input type="text" class="form-control" id="inputPassword" />
+                <input type="text" class="form-control" id="inputPassword" value={3}/>
               </div>
             </div>
 
-            {/* Phone */}
-            <div class="form-group col-md-3">
+            {/* ------e */}
+            <div class="  col-md-3">
               <div class="">
-                <input type="text" class="form-control" id="inputPassword" />
+                <input type="text" class="form-control" id="inputPassword" value={5} />
               </div>
             </div>
 
-            {/* Phone */}
-            <div class="form-group col-md-3">
+            {/* ------ */}
+            <div class="  col-md-3">
               <div class="">
-                <input type="text" class="form-control" id="inputPassword" />
+                <input type="text" class="form-control" id="inputPassword" value={5}/>
               </div>
             </div>
 
             {/* **************************** */}
 
-            <div className="form-group col-md-12 d-flex justify-content-end">
+            <div className="  col-md-12 d-flex justify-content-end mb-4">
               {/* Transection Password */}
-              <div class="form-group col-md-2">
+              <div class="  col-md-2">
                 <label for="inputPassword" class="col-form-label">
                   Transection Password
                 </label>
@@ -366,7 +366,7 @@ const AddAccount = () => {
                   />
                 </div>
 
-                <button className="btn btn-warning mt-2">Create Account</button>
+                <button className="btn btn-warning mt-2 create_account">Create Account</button>
               </div>
             </div>
           </div>

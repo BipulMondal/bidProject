@@ -81,9 +81,11 @@
 .list_item {
   margin-left: 20px;
   font-weight: bold;
+  cursor: pointer;
 }
 .header_icon {
   margin-left: 30px;
+  cursor: pointer;
 }
 .herder_right {
   display: flex;
@@ -107,7 +109,7 @@
   background-color: #f1c40f;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  /* z-index: -1; */
+  /* z-index: 1; */
 }
 
 .dropdown-content a {
@@ -142,7 +144,7 @@
   background-color: #f1c40f;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  /* z-index: -1; */
+  z-index: 1;
   width: 240px;
   margin-left: -17px;
   /* margin-top: 5px; */
@@ -171,10 +173,10 @@
   background-color: #f1c40f;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  /* z-index: -1; */
+  z-index: 1;
   width: 240px;
   margin-left: -17px;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 .list_content_three a {
   text-decoration: none;
@@ -191,6 +193,8 @@
 .client_black_div {
   background-color: #000;
   height: 35px;
+  display: flex;
+  align-items: center;
 }
 .client_black_div h4 {
   font-size: 15px;
@@ -226,10 +230,10 @@
 .commisiom_setting {
   width: 100%;
 }
-.Current_bits_top{
-display: flex;
+.Current_bits_top {
+  display: flex;
 }
-.account_state{
+.account_state {
   width: 100%;
 }
 .general_report {
@@ -237,4 +241,39 @@ display: flex;
 }
 .bet_history {
   width: 100%;
+}
+.add_account_main input,
+.add_account_main select {
+  height: 28px;
+  font-size: 12px;
+}
+.add_account_main select {
+  padding: 0 3px;
+}
+.account_head {
+  margin: 15px 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+.create_account {
+  height: 27px;
+  width: 114px;
+  font-size: 11px;
+  color: white;
+  float: right;
+}
+.load_button {
+  display: flex;
+  align-items: end;
+  color: w;
+}
+.statement_main,
+.current_bets {
+  padding: 10px;
+}
+.statement_main h5 {
+  margin-left: 17px;
+}
+.current_bets h5 {
+  margin-left: 17px;
 }
