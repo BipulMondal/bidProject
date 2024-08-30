@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../images/logo.png";
 
 const Login = () => {
+  const initial = {
+    username: "",
+    password: "",
+  };
+
+  const [loginData, setLoginData] = useState(initial);
+
   return (
     <div className="login_main">
       <div className="from_main">

@@ -11,6 +11,7 @@ import GeneralReport from "../view/reports/GeneralReport";
 import GameReport from "../view/reports/GameReport";
 import ProfitLoss from "../view/reports/ProfitLoss";
 import CasinoResult from "../view/reports/CasinoResult";
+import AddAccount from "../view/clientlist/AddAccount";
 
 function AppRoutes() {
   const navigate = useNavigate();
@@ -38,6 +39,7 @@ function AppRoutes() {
       <Route path="/" element={<Main />}>
         <Route index element={<Dashboard />} /> {/* Renders at the root path */}
         <Route path="clientlist" element={<Client />} />
+        <Route path="clientlist/add_account" element={<AddAccount />} />
         <Route path="currentBets" element={<CurrentBets />} />
         <Route path="accountStatement" element={<AccountStatements />} />
         <Route path="betHistory" element={<BetHistory />} />

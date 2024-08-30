@@ -208,6 +208,13 @@
 .client_black_div {
   background-color: #000;
   color: white;
+  height: auto;
+  padding: 5px;
+  font-size: 13px;
+}
+.black_middle {
+  display: flex;
+  justify-content: space-between;
 }
 .add_account_main {
   width: 98%;
@@ -276,4 +283,8 @@
 }
 .current_bets h5 {
   margin-left: 17px;
+}
+.main_table {
+  padding: 15px 3px;
+  font-size: 12px;
 }
