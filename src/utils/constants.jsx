@@ -1,3 +1,5 @@
 const IMG_BASE_URL = "paste image url gere";
-const BASE_URL = "http://3.250.2.175:5000"
-export { IMG_BASE_URL,BASE_URL };
+const ADD_URL = "/api/v1/admin";
+const COMMON_URL = "http://localhost:8000";
+const BASE_URL = COMMON_URL + ADD_URL;
+export { IMG_BASE_URL, BASE_URL };

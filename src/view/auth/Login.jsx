@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../images/logo.png";
-import { login } from "../../API_HELPERS/apiHelpers";
+import { requestHandler } from "../../utils/requestHandler";
 
 const Login = () => {
   const initial = {
@@ -10,14 +10,27 @@ const Login = () => {
 
   const [loginData, setLoginData] = useState(initial);
 
-  const handleSubmit = async () => {
+  const handleChnage = (e) => {
+    setLoginData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     try {
+     
       let data = loginData;
+      alert(data)
       let res = await requestHandler({
         endpoint: "/account/login",
         method: "POST",
-        body,
+        body:data,
       });
+      alert(res)
+
+      console.log("resss", data, res);
     } catch (error) {
       console.log(error.message);
     }
@@ -33,22 +46,27 @@ const Login = () => {
           <div className="text_main">
             <h3 className="sign_in_txt">Sign In</h3>
           </div>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div class="mb-3 username">
               <input
-                type="email"
+                type="text"
+                name="username"
+                value={loginData.username}
                 class="form-control"
                 id="exampleInputEmail1"
-                aria-describedby="emailHelp"
                 placeholder="Username"
+                onChange={(e) => handleChnage(e)}
               />
             </div>
             <div class="mb-3">
               <input
                 type="password"
+                name="password"
+                value={loginData.password}
                 class="form-control"
                 id="exampleInputPassword1"
                 placeholder="Password"
+                onChange={(e) => handleChnage(e)}
               />
             </div>
             <button type="submit" class="btn btn-dark login_btn">
