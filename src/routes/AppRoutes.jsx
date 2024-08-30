@@ -20,10 +20,7 @@ function AppRoutes() {
   const [loggedIn, setloggedIn] = useState(false);
 
   useEffect(() => {
-    if (
-      localStorage.getItem("Authorization") &&
-      localStorage.getItem("userType")
-    ) {
+    if (localStorage.getItem("token")) {
       if (from === "/") {
         navigate("/");
       } else {
@@ -34,10 +31,11 @@ function AppRoutes() {
       navigate("/login");
     }
   }, [loggedIn]);
+
   return (
     <Routes>
       <Route path="/" element={<Main />}>
-        <Route index element={<Dashboard />} /> {/* Renders at the root path */}
+        <Route index element={<Dashboard />} />
         <Route path="clientlist" element={<Client />} />
         <Route path="clientlist/add_account" element={<AddAccount />} />
         <Route path="currentBets" element={<CurrentBets />} />

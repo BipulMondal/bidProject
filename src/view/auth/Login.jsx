@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import logo from "../../images/logo.png";
 import { requestHandler } from "../../utils/requestHandler";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const initial = {
     username: "",
     password: "",
   };
-
   const [loginData, setLoginData] = useState(initial);
+  const navigate = useNavigate();
 
   const handleChnage = (e) => {
     setLoginData((prev) => ({
@@ -20,19 +22,22 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-     
       let data = loginData;
-      alert(data)
       let res = await requestHandler({
         endpoint: "/account/login",
         method: "POST",
-        body:data,
+        body: data,
       });
-      alert(res)
 
-      console.log("resss", data, res);
+      if (res && res.success) {
+        localStorage.setItem("token", res?.data?.accessToken);
+        toast.success(res?.message);
+        navigate("/")
+      } else {
+        toast.error(res?.message);
+      }
     } catch (error) {
-      console.log(error.message);
+      toast.error(error.message);
     }
   };
 

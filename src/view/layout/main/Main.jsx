@@ -5,17 +5,18 @@ import Header from "./../Header";
 import { Outlet } from "react-router-dom";
 
 export default function Main() {
-  const [loggedIn, setloggedIn] = useState(false);
-  useEffect(() => {
-    if (
-      localStorage.getItem("Authorization") &&
-      localStorage.getItem("userType")
-    ) {
-      setloggedIn(true);
-    } else {
-      setloggedIn(false);
-    }
-  }, []);
+  // const [loggedIn, setloggedIn] = useState(false);
+  const [loggedIn, setloggedIn] = useState(true);
+  // useEffect(() => {
+  //   if (
+  //     localStorage.getItem("Authorization") &&
+  //     localStorage.getItem("userType")
+  //   ) {
+  //     setloggedIn(true);
+  //   } else {
+  //     setloggedIn(false);
+  //   }
+  // }, []);
 
   return (
     <>

@@ -7,7 +7,7 @@ const api = axios.create({
     "Content-Type": "application/json",
     "Access-Control-Allow-Origin": BASE_URL,
   },
-  withCredentials: true,
+  // withCredentials: true,
 });
 
 export async function requestHandler({
