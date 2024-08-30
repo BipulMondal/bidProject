@@ -12,6 +12,7 @@ import GameReport from "../view/reports/GameReport";
 import ProfitLoss from "../view/reports/ProfitLoss";
 import CasinoResult from "../view/reports/CasinoResult";
 import AddAccount from "../view/clientlist/AddAccount";
+import MarketAnalysis from "../marketanalysis/MarketAnalysis";
 
 function AppRoutes() {
   const navigate = useNavigate();
@@ -45,6 +46,7 @@ function AppRoutes() {
         <Route path="gameReport" element={<GameReport />} />
         <Route path="profitLoss" element={<ProfitLoss />} />
         <Route path="cashinoResult" element={<CasinoResult />} />
+        <Route path="marketanalysis" element={< MarketAnalysis/>} />
       </Route>
       <Route path="/login" element={<Login />} />
     </Routes>

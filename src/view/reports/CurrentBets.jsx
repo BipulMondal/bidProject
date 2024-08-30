@@ -178,7 +178,9 @@ const CurrentBets = () => {
         </div>
       </div>
     </div>
-    <Table data={tableData} />
+    <div className="table_div">
+          <Table data={tableData} />
+        </div>
     </>
   );
 };

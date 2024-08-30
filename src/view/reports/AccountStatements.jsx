@@ -165,7 +165,9 @@ const AccountStatements = () => {
         </div>
         </form>
         </div>
-        <Table data={tableData} />
+        <div className="table_div">
+          <Table data={tableData} />
+        </div>
         </>
   
   );

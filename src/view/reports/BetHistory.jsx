@@ -204,8 +204,9 @@ const BetHistory = () => {
           </div>
         </div>
       </form>
-
-      <Table data={tableData} />
+      <div className="table_div">
+          <Table data={tableData} />
+        </div>
     </>
   );
 };
