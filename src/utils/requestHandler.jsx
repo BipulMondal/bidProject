@@ -20,6 +20,10 @@ export async function requestHandler({
   const config = {
     method,
     url: endpoint,
+    headers: {
+      ...headers, // Correctly place headers inside the headers key
+      "Content-Type": contentType, // Ensure Content-Type is set correctly
+    },
   };
 
   if (body && contentType === "application/json") {
@@ -42,6 +46,7 @@ export async function requestHandler({
     }
   }
 }
+
 
 export async function uploadFileHandler({
   endpoint,
