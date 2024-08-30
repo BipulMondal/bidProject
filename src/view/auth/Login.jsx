@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../images/logo.png";
+import { login } from "../../API_HELPERS/apiHelpers";
 
 const Login = () => {
   const initial = {
@@ -8,6 +9,19 @@ const Login = () => {
   };
 
   const [loginData, setLoginData] = useState(initial);
+
+  const handleSubmit = async () => {
+    try {
+      let data = loginData;
+      let res = await requestHandler({
+        endpoint: "/account/login",
+        method: "POST",
+        body,
+      });
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
 
   return (
     <div className="login_main">
