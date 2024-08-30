@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import AddAccount from "./AddAccount";
 import { useNavigate } from "react-router-dom";
 import Table from "../../components/Table";
 
 const Client = () => {
   const navigate = useNavigate();
+  const [status, setStatus] = useState(true);
 
   const filterData = [];
 
@@ -152,23 +153,68 @@ const Client = () => {
   return (
     <>
       <div className="client_main">
-        <div className="client_black_div row gap-x-2">
-            <div className="col-md-4">
-              <div className="black_middle">
-                <div>
-                  <p>Upper Level Credit Referance:</p>
-                  <p>Total Master Balance</p>
-                  <p>Available Balance:</p>
+        <div className="client_black_div_top">
+          <div className="down_arrow_main">
+            {status ? (
+              <i
+                onClick={() => setStatus(false)}
+                class="fa-regular fa-circle-down"
+              ></i>
+            ) : (
+              <i
+                onClick={() => setStatus(true)}
+                class="fa-regular fa-circle-up"
+              ></i>
+            )}
+          </div>
+          {!status ? (
+            <div className="row gap-x-2 mt-4">
+              <div className="col-md-4">
+                <div className="black_middle">
+                  <div>
+                    <p>Upper Level Credit Referance:</p>
+                    <p>Total Master Balance</p>
+                    <p>Available Balance:</p>
+                  </div>
+                  <div>
+                    <p>500000.00</p>
+                    <p>500000.00</p>
+                    <p>500000.00</p>
+                  </div>
                 </div>
-                <div>
-                  <p>500000.00</p>
-                  <p>500000.00</p>
-                  <p>500000.00</p>
+              </div>
+              <div className="col-md-4">
+                <div className="black_middle">
+                  <div>
+                    <p>Down level Balance:</p>
+                    <p>Uper Level:</p>
+                    <p>Available Balance with Profit/Loss:</p>
+                  </div>
+                  <div>
+                    <p>0.00</p>
+                    <p>0</p>
+                    <p>500000.00</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="black_middle">
+                  <div>
+                    <p>Down Level Credit Reference:</p>
+                    <p>Down Level Profit/Loss:</p>
+                    <p>My Profit/Loss:</p>
+                  </div>
+                  <div>
+                    <p>0.00</p>
+                    <p>0</p>
+                    <p>0.00</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-4"></div>
-            <div className="col-md-4"></div>
+          ) : (
+            ""
+          )}
         </div>
 
         <div className="client_list">
@@ -198,10 +244,10 @@ const Client = () => {
             </div>
           </div>
         </div>
-        <div></div>
+        <div className="table_div">
+          <Table data={tableData} />
+        </div>
       </div>
-
-      <Table data={tableData} />
     </>
   );
 };

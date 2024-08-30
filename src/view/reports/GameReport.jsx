@@ -192,7 +192,9 @@ const GameReport = () => {
         </div>
       </form>
     </div>
-    <Table data={tableData} />
+    <div className="table_div">
+          <Table data={tableData} />
+        </div>
     </>
 
   );
